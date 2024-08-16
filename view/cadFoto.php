@@ -35,10 +35,10 @@ ob_start();
 
 <?php
 
-//Verifica se o botão submit foi acionado
+
 if(isset($_POST['btnSalvar'])){
 
-    //Chama uma função PHP que permite informar a classe e o Método que será acionado
+    
     if(isset($foto)){
         call_user_func(array('fotoController','salvar'),$foto->getFoto(),$foto->getFotoTipo());
     }else{

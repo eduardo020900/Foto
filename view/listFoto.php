@@ -1,5 +1,5 @@
 <?php
-//Chama uma função PHP que permite informar a classe e o Método que será acionado
+
   $fotos = call_user_func(array('fotoController','listar'));
 
 
@@ -12,7 +12,7 @@
         <tbody>
         <?php 
         $cont=0;
-        //Verifica se houve algum retorno
+        
         if (isset($fotos) && !empty($fotos)) {
           foreach ($fotos as $foto) {
             
